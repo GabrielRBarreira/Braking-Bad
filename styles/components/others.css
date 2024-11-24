@@ -1,0 +1,32 @@
+.others {
+  max-width: 1280px;
+  margin-inline: auto;
+}
+.others_elements {
+  padding-inline: 1.25rem;
+  gap: 2rem;
+  padding-top: 4rem;
+}
+.others_text {
+  flex: 1;
+}
+.others_img {
+  flex: 1;
+  padding-bottom: 1rem;
+}
+.rev_img {
+  order: 1;
+}
+@media (width > 1024px) {
+  .others_elements {
+    display: flex;
+  }
+}
+@media (width < 1024px) {
+  .others_elements {
+    display: column;
+  }
+  .rev_img {
+    order: 0;
+  }
+}
